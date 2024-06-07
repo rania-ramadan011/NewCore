@@ -1,0 +1,15 @@
+{
+  "originHash" : "69328900594843491dd43d95c9cca53c57d69707927dab606581e5f2dd4dfe8e",
+  "pins" : [
+    {
+      "identity" : "newsapplication",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rania-ramadan011/NewsApplication.git",
+      "state" : {
+        "revision" : "8d5b2e66a507c09dcfb4d92b4cb5bfb2fc90052c",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
