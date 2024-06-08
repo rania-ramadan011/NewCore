@@ -1,10 +1,10 @@
 {
-  "originHash" : "69328900594843491dd43d95c9cca53c57d69707927dab606581e5f2dd4dfe8e",
+  "originHash" : "57eea83de9e959bf410cc145d28fc2268fc8d762c9aac20232cafa8ea426aa26",
   "pins" : [
     {
-      "identity" : "newsapplication",
+      "identity" : "commonutilities",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rania-ramadan011/NewsApplication.git",
+      "location" : "https://github.com/rania-ramadan011/CommonUtilities.git",
       "state" : {
         "revision" : "8d5b2e66a507c09dcfb4d92b4cb5bfb2fc90052c",
         "version" : "1.0.0"
