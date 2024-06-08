@@ -1,13 +1,13 @@
 {
-  "originHash" : "57eea83de9e959bf410cc145d28fc2268fc8d762c9aac20232cafa8ea426aa26",
+  "originHash" : "499abad9da9485a257d944e5ed09b2fcbff6856d40e729a37e468b64b0460db2",
   "pins" : [
     {
       "identity" : "commonutilities",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rania-ramadan011/CommonUtilities.git",
       "state" : {
-        "revision" : "8d5b2e66a507c09dcfb4d92b4cb5bfb2fc90052c",
-        "version" : "1.0.0"
+        "revision" : "2406a1c01d7f1caf6f09841cc2e04e7898fdd669",
+        "version" : "1.0.1"
       }
     }
   ],

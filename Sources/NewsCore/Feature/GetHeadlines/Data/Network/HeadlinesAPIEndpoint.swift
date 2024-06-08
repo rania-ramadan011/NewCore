@@ -17,7 +17,7 @@ public class HeadlinesAPIEndpoint: APIRequestProtocol {
     var key: String
     var country: String
     
-    init(key:String,country:String) {
+    public init(key:String,country:String) {
         self.country = country
         self.key = key
         baseURL = "https://newsapi.org"
@@ -26,6 +26,4 @@ public class HeadlinesAPIEndpoint: APIRequestProtocol {
         header = ["Content-type": "application/json"]
         queryParams = ["apiKey":key,"country":country]
     }
-    
-  
 }

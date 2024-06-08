@@ -14,13 +14,13 @@ public struct HeadlineResponseModel: Codable {
 
 // MARK: - Article
 public struct Article: Codable {
-    public let source: Source
+    public let source: Source?
     public let author: String?
-    public let title: String
+    public let title: String?
     public let description: String?
-    public let url: String
+    public let url: String?
     public let urlToImage: String?
-    public let publishedAt: Date
+    public let publishedAt: String?
     public let content: String?
 }
 
@@ -29,4 +29,3 @@ public struct Source: Codable {
     public let id: String?
     public let name: String
 }
-

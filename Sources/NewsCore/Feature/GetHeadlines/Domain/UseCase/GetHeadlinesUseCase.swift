@@ -11,8 +11,27 @@ import Combine
 
 public class GetHeadlinesUseCase {
     public let repo: HeadlinesRepositoryProtocol = HeadlinesRepository()
+    public var newsResult: (([Article]?) -> Void)?
+    public var error: ((Error?) -> Void)?
+    var cancellables = Set<AnyCancellable>()
+    
     public init(){}
-    public func getHeadlines(request: APIRequestProtocol)-> AnyPublisher<HeadlineResponseModel , Error > {
-        return repo.getHeadlines(request: request)
+    public func getHeadlines(request: APIRequestProtocol) {
+        repo.getHeadlines(request: request)
+            .sink(
+                receiveCompletion: { result in
+                    switch result {
+                    case .finished:
+                        break
+                    case .failure(let error):
+                        self.error?(error)
+                        print("Error: \(error)")
+                    }
+                },
+                receiveValue: { [weak self] response in
+                    self?.newsResult?(response.articles)
+                    print("Result: \(response)")
+                }
+            ).store(in: &cancellables)
     }
 }
